@@ -17,7 +17,11 @@ issues I saw from injection attacks and whatnot (since you are effectively allow
 to your python session).
 
 It goes without saying that this code is considered *UNSAFE* to run. It requires generating your own keys and to
-trust the keys made. I made this for fun, and a way to dump my thoughts and musings to a text file when I rode the bus.
+trust the keys made. It also requires allowing the users of the site to insert *RAW* and *UNCHECKED* text into your
+site.
+
+I made this for fun, and a way to dump my thoughts and musings to a text file when I rode the bus. And feel like
+Bean and the other battle school bratts in their dealings durring the league war!
 
 
 I hope this inspires you to make something that works better and is much cooler.
