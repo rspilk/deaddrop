@@ -27,7 +27,9 @@ P = '\
 </body>\
 </html>\
 '
+# Variables used in program
 messages = "/path/to/messages/file"
+port = 8083
 
 
 # Writes passed string and IP address to file, along with a timestamp
@@ -68,7 +70,7 @@ class Simple(resource.Resource):
 
 sslContext = ssl.DefaultOpenSSLContextFactory('keys/server.pem','keys/ca.pem')
 site = server.Site(Simple())
-reactor.listenSSL(8083, site, contextFactory = sslContext)
+reactor.listenSSL(port, site, contextFactory = sslContext)
 
 #reactor.listenTCP(8083, site)
 reactor.run()
