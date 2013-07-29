@@ -2,6 +2,7 @@ from twisted.web import server, resource
 from twisted.internet import reactor, ssl
 import datetime
 
+# This string is the base site
 P = '\
 <html>\
 <head>\
@@ -29,6 +30,7 @@ P = '\
 messages = "/path/to/messages/file"
 
 
+# Writes passed string and IP address to file, along with a timestamp
 def saveMessage(string,IP):
   f = open(messages,'a')
   timeStamp = datetime.datetime.now().isoformat(' ')
